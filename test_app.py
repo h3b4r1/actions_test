@@ -11,7 +11,7 @@ def main():
     arg_parser.add_argument('-n', '--network', action='store_true', help='Display the network information')
     arg_parser.add_argument('-a', '--all', action='store_true', help='Display all the information')
     args = arg_parser.parse_args()
-    if len(sys.argv) == 1:
+    if len(sys.argv) != 2:
         arg_parser.print_help()
         sys.exit(1)
     if args.os:
