@@ -1,10 +1,11 @@
-    '''some code to show the use of argparse by dispalying the linux system information'''
+'''some code to show the use of argparse by dispalying the linux system information'''
 
 import sys
 import os
 import argparse
 
 def main():
+    '''Main Function to display the system information using argparse'''
     arg_parser = argparse.ArgumentParser(description='Display the system information')
     arg_parser.add_argument(
         '-o', '--os', action='store_true', help='Display the OS information'
