@@ -19,6 +19,6 @@ jobs:
         env:
           AQUA_KEY: $AQUA_KEY
           AQUA_SECRET: $AQUA_SECRET
-          GITHUB_TOKEN: $GH_TOKEN
+          GITHUB_TOKEN: ${{ github.token }}
           TRIVY_RUN_AS_PLUGIN: 'aqua'
           # For http/https proxy configuration add env vars: HTTP_PROXY/HTTPS_PROXY, CA-CRET (path to CA certificate)
